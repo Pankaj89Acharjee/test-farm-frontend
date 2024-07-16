@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Murecho', sans-serif;
+}
+
+.freeze_header { /* This is for Navbar section in Header.jsx */
+  width: 100%;
+  height: 70px;
+  line-height: 60px;
+  position: sticky;
+  top: 0px;
+  left:0;
+  box-shadow: 3px 3px -8px 3px #d52c2c;
+  z-index: 99;
+  background-color: #3085C3;
+  padding-bottom: 2px; 
+  color: aliceblue;
+  border-bottom: #fff;
+}
+
+.custom-popconfirm .ant-btn:hover {
+  color: #0e0d0d;  /* Text color on hover */  
+  border: 1px solid black; /* Border style on hover */
+  border-radius: 4px; /* Border radius on hover */
+  transition: background-color 0.3s ease-in-out; /* Transition effect */
+}
+
+.custom-popconfirm .ant-btn {
+  color:#0e0d0d;
+  border: 1px solid black;
+}
+
+
+/* */
+
+@media only screen and (max-width: 1024px) {
+  .navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+  }
+
+  .menu {
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 200;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+
+  .show_menu {
+    display: block;
+  } 
+}
