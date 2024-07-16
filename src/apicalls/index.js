@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:5075",
+    // baseURL: "http://localhost:5075",
+    baseURL: "https://test-farm-2qs1.onrender.com/"
 });
 
 axiosInstance.interceptors.request.use((config) => {
